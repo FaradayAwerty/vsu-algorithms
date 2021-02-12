@@ -43,13 +43,12 @@ int main()
 	int elem;
 	printf("element to find: ");
 	scanf("%d", &elem);
-	int index = linear_search(arr, SIZE, elem);
 
+	int index = linear_search(arr, SIZE, elem);
 	if(index == -1) {
 		puts("element not found");
 		return 0;
 	}
-
 	printf("%d\n", index);
 	print_arr(arr, index+1);
 
