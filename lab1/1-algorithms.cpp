@@ -4,25 +4,11 @@
 
 #define SIZE 100000000l
 
-// возвращает индекс элемента со значением `val` в массиве `arr`
-// если элемент не найден, возвращает -1
 int linear_search(int *arr, long long len, int val);
-
-// возвращает индекс элемента со значением `val` в массиве `arr`
-// если элемент не найден, возвращает -1
 int linear_search_with_barrier(int *arr, long long len, int val);
-
-// возвращает индекс элемента со значением `val` в упорядоченном массиве `arr`
-// если элемент не найден, возвращает -1
 int binary_search(int *arr, long long len, int val);
-
-// возвращает индекс элемента со значением `val` в упорядоченном массиве `arr`
-// если элемент не найден, возвращает -1
 int binary_search_recursive(int *arr, long long left, long long right, int val);
-
-// заполняет массив `arr` случайными целыми числами в отрезке [min; max]
 void random_fill(int *arr, long long len, int min, int max);
-
 void print_arr(int *arr, long long len);
 
 int main()
@@ -38,7 +24,7 @@ int main()
 	scanf("%d", &min);
 	printf("max element: ");
 	scanf("%d", &max);
-	random_fill(arr, SIZE, -50, 50);
+	random_fill(arr, SIZE, min, max);
 
 	int elem;
 	printf("element to find: ");

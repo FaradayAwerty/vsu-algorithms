@@ -1,10 +1,7 @@
-#include <cstdio>
-#include <cstdlib>
-#include <ctime>
-#include <climits>
-#include <iostream>
+#include <iostream>	// input output
+#include <cstdlib>	// for random numbers
+#include <ctime>	// also for random numbers
 
-#define K 10
 #define SIZE 100000000l
 
 int main()
